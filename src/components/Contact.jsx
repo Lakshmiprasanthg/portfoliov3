@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Vaniyambadi, Tamil Nadu, India',
+      value: 'Pernambut,Vellore, Tamil Nadu',
       href: null,
       color: 'purple'
     }

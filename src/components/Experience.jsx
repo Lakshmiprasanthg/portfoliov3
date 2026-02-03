@@ -7,7 +7,7 @@ const Experience = () => {
     company: 'Flutions Ind Pvt Ltd',
     role: 'Web Development Intern',
     type: 'Internship',
-    duration: 'July 2024 - August 2024',
+    duration: 'July 2025 - August 2025',
     location: 'Pernambut, Tamil Nadu, India',
     tags: ['React.js', 'UI Components', 'Agile', 'Git', 'REST APIs'],
     achievements: [

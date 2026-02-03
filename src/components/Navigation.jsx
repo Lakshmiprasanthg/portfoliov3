@@ -49,12 +49,12 @@ const Navigation = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-6 left-6 z-50 lg:hidden p-3 glass-card border-accent-emerald/30 hover:border-accent-emerald/50 transition-all"
+        className="fixed top-20 left-4 z-50 lg:hidden p-3 glass-card border-accent-blue/30 hover:border-accent-blue/50 transition-all"
       >
         {isOpen ? (
-          <X className="w-6 h-6 text-accent-emerald" />
+          <X className="w-6 h-6 text-accent-blue" />
         ) : (
-          <Menu className="w-6 h-6 text-accent-emerald" />
+          <Menu className="w-6 h-6 text-accent-blue" />
         )}
       </motion.button>
 
@@ -63,7 +63,7 @@ const Navigation = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="hidden lg:flex fixed left-0 top-0 bottom-0 w-72 glass-card border-r border-accent-emerald/20 z-40 flex-col"
+        className="hidden lg:flex fixed left-0 top-0 bottom-0 w-72 glass-card border-r border-accent-blue/20 z-40 flex-col"
       >
         {/* Name/Brand Section */}
         <div className="p-8 border-b border-border">
@@ -72,12 +72,12 @@ const Navigation = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            <h1 className="text-3xl font-bold font-mono text-accent-emerald mb-2">LP</h1>
+            <h1 className="text-3xl font-bold font-mono text-accent-blue mb-2">LP</h1>
             <h2 className="text-xl font-semibold mb-1">Lakshmiprasanth G</h2>
             <p className="text-base text-gray-400">Full-Stack Web Developer</p>
             <div className="mt-4 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-accent-emerald animate-pulse" />
-              <span className="text-sm text-accent-emerald font-mono">Available</span>
+              <div className="w-2 h-2 rounded-full bg-accent-blue animate-pulse" />
+              <span className="text-sm text-accent-blue font-mono">Available</span>
             </div>
           </motion.div>
         </div>
@@ -95,22 +95,22 @@ const Navigation = () => {
                 transition={{ delay: 0.6 + index * 0.1 }}
                 className={`group relative flex items-center gap-4 p-4 rounded-lg transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'bg-accent-emerald/10 border border-accent-emerald/50'
-                    : 'border border-transparent hover:border-accent-emerald/30 hover:bg-accent-emerald/5'
+                    ? 'bg-accent-blue/10 border border-accent-blue/50'
+                    : 'border border-transparent hover:border-accent-blue/30 hover:bg-accent-blue/5'
                 }`}
               >
                 <item.icon
                   className={`w-6 h-6 transition-colors ${
                     activeSection === item.id
-                      ? 'text-accent-emerald'
-                      : 'text-gray-400 group-hover:text-accent-emerald'
+                      ? 'text-accent-blue'
+                      : 'text-gray-400 group-hover:text-accent-blue'
                   }`}
                 />
                 <span
                   className={`text-base font-medium transition-colors ${
                     activeSection === item.id
-                      ? 'text-accent-emerald'
-                      : 'text-gray-300 group-hover:text-accent-emerald'
+                      ? 'text-accent-blue'
+                      : 'text-gray-300 group-hover:text-accent-blue'
                   }`}
                 >
                   {item.label}
@@ -140,11 +140,11 @@ const Navigation = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -300, opacity: 0 }}
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="fixed left-0 top-0 bottom-0 w-64 glass-card border-r border-accent-emerald/30 z-40 lg:hidden p-6"
+              className="fixed left-0 top-0 bottom-0 w-64 glass-card border-r border-accent-blue/30 z-40 lg:hidden p-6"
             >
               {/* Header */}
               <div className="mb-8 mt-16">
-                <h2 className="text-xl font-bold font-mono text-accent-emerald">LP</h2>
+                <h2 className="text-xl font-bold font-mono text-accent-blue">LP</h2>
                 <p className="text-xs text-gray-500 mt-1">Full-Stack Developer</p>
               </div>
 
@@ -160,8 +160,8 @@ const Navigation = () => {
                     transition={{ delay: index * 0.05 }}
                     className={`flex items-center gap-3 p-3 rounded-lg transition-all ${
                       activeSection === item.id
-                        ? 'bg-accent-emerald/10 border border-accent-emerald/50 text-accent-emerald'
-                        : 'border border-transparent hover:border-accent-emerald/30 text-gray-400 hover:text-accent-emerald'
+                        ? 'bg-accent-blue/10 border border-accent-blue/50 text-accent-blue'
+                        : 'border border-transparent hover:border-accent-blue/30 text-gray-400 hover:text-accent-blue'
                     }`}
                   >
                     <item.icon className="w-5 h-5" />
@@ -172,9 +172,9 @@ const Navigation = () => {
 
               {/* Footer */}
               <div className="absolute bottom-6 left-6 right-6">
-                <div className="glass-card p-3 border-accent-emerald/20">
+                <div className="glass-card p-3 border-accent-blue/20">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-accent-emerald animate-pulse" />
+                    <div className="w-2 h-2 rounded-full bg-accent-blue animate-pulse" />
                     <span className="text-sm text-gray-400 font-mono">Available for opportunities</span>
                   </div>
                 </div>
